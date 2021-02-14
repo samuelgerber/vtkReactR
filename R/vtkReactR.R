@@ -4,6 +4,14 @@
 #'
 #' @import htmlwidgets
 #'
+#' @examples
+#' libray("vtkReactR")
+#' #Transfer function at the moment broken
+#' volume = array(runif(1000), dim=rep(10, 3))
+#' vtkReactR::vtkView(
+#'   vtkReactR::vtkVolumeDataRepresentation(volume=volume)
+#' )
+#'
 #' @export
 vtkView <- function(..., width = NULL, height = NULL, elementId = NULL, id=0)
 {
@@ -81,7 +89,7 @@ vtkImageData <- function( ... ){
 #'
 #' @export
 vtkViewOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'vtkView', width, height, package = 'vtkReactR')
+  htmlwidgets::shinyWidgetOutput(outputId, 'vtkReactR', width, height, package = 'vtkReactR')
 }
 
 #' @rdname vtkReactR-shiny

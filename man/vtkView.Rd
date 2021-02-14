@@ -9,3 +9,12 @@ vtkView(..., width = NULL, height = NULL, elementId = NULL, id = 0)
 \description{
 <Add Description>
 }
+\examples{
+libray("vtkReactR")
+#Transfer function at the moment broken
+volume = array(runif(1000), dim=rep(10, 3))
+vtkReactR::vtkView(
+  vtkReactR::vtkVolumeDataRepresentation(volume=volume)
+)
+
+}

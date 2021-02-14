@@ -19,12 +19,25 @@ devtools::install_github("samuelgerber/vtkReactR")
 
 ```
 libray("vtkReactR")
+require(shiny)
 
-#Transfer function at the moment broken
-volume = array(runif(1000), dim=rep(10, 3))
-vtkReactR::vtkView(
-  vtkReactR::vtkVolumeDataRepresentation(volume=volume)
+ui <- fluidPage(
+  titlePanel("vtkReactR Volume Rendering"),
+  vtkViewOutput("widgetOutput"),
+  actionButton("random", "Update Volume")
 )
+
+server <- function(input, output, session) {
+  output$widgetOutput <- renderVtkView({
+    input$random
+    volume = array(runif(1000), dim=rep(10, 3))
+    vtkReactR::vtkView(
+      vtkReactR::vtkVolumeDataRepresentation(volume=volume)
+    )
+  })
+}
+
+shinyApp(ui, server)
 
 ```
 
