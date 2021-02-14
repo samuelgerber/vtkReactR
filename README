@@ -56,7 +56,7 @@ After you've installed Node.js and Yarn, run the following command to resolve an
 yarn install
 ```
 
-Now, run `yarn` to build `inst/htmlwidgets/sparklineswidget.js`:
+Now, run `yarn` to build `inst/htmlwidgets/vtkReactR.js`:
 
 ```
 yarn run webpack --mode=development
