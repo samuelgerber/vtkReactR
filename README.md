@@ -1,6 +1,6 @@
 # vtkReactR HTMLWidget
 
-R hamtlwidget wrapper for react-vtk-js.
+R htmlwidget wrapper for react-vtk-js.
 
 Work in progress ...
 
