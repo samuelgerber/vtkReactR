@@ -1,21 +1,20 @@
 # vtkReactR HTMLWidget
 
-R hamtlwidget wrapper for react-vtk-js.
+R htmlwidget wrapper for react-vtk-js.
 
 Work in progress ...
 
-## Install
+## Install 
 
 In R:
 
 ```
 require("devtools")
-library("devtools")
 devtools::install_github("samuelgerber/vtkReactR")
 ```
 
 
-## Running
+### Example
 
 ```
 libray("vtkReactR")
@@ -55,12 +54,12 @@ Building Javascript should work on macOS, Linux, and Windows. The following tool
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/en/)
 
-## R Build Requirements
+### R Build Requirements
 
 You should install the `reactR` package if you haven't, as this widget depends on it.
 
 
-## Development Workflow
+### Development Workflow
 
 After you've installed Node.js and Yarn, run the following command to resolve and download dependencies:
 
@@ -68,7 +67,7 @@ After you've installed Node.js and Yarn, run the following command to resolve an
 yarn install
 ```
 
-Now, run `yarn` to build `inst/htmlwidgets/sparklineswidget.js`:
+Now, run `yarn` to build `inst/htmlwidgets/vtkReactR.js`:
 
 ```
 yarn run webpack --mode=development
@@ -79,7 +78,7 @@ yarn run webpack --mode=development
 Now that the Javascript is built, you can install the R package:
 
 ```
-library(devtools)
+require(devtools)
 devtools::document()
 devtools::install()
 ```
