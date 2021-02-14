@@ -67,7 +67,7 @@ yarn run webpack --mode=development
 Now that the Javascript is built, you can install the R package:
 
 ```
-library(devtools)
+require(devtools)
 devtools::document()
 devtools::install()
 ```
