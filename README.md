@@ -37,10 +37,6 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
-<<<<<<< HEAD
-
-=======
->>>>>>> 36059698009293fea17e6848928f7f7345ec9343
 ```
 
 
