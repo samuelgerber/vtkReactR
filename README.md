@@ -10,12 +10,11 @@ In R:
 
 ```
 require("devtools")
-library("devtools")
 devtools::install_github("samuelgerber/vtkReactR")
 ```
 
 
-## Running
+### Example
 
 ```
 libray("vtkReactR")
@@ -38,7 +37,10 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36059698009293fea17e6848928f7f7345ec9343
 ```
 
 
@@ -56,12 +58,12 @@ Building Javascript should work on macOS, Linux, and Windows. The following tool
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/en/)
 
-## R Build Requirements
+### R Build Requirements
 
 You should install the `reactR` package if you haven't, as this widget depends on it.
 
 
-## Development Workflow
+### Development Workflow
 
 After you've installed Node.js and Yarn, run the following command to resolve and download dependencies:
 
