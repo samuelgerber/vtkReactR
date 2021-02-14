@@ -10,7 +10,6 @@ In R:
 
 ```
 require("devtools")
-library("devtools")
 devtools::install_github("samuelgerber/vtkReactR")
 ```
 
